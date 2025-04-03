@@ -1,0 +1,27 @@
+Beschreibung                                Anweisung
+------------------------------------------------------------
+Der Variablen person
+wird der String "Elena" zugewiesen          person = "Elena"
+------------------------------------------------------------
+Der Variablen zahl wird                     zahl = 10
+der Wert 10 zugewiesen
+------------------------------------------------------------
+Der Inhalt der Variablen zahl               zahl += 5
+wird um 5 erhöht
+------------------------------------------------------------
+Der Inhalt der Variablen zahl wird          print(zahl)
+auf dem Bildschirm ausgegeben
+------------------------------------------------------------
+Der Inhalt der Variablen x wird mit        produkt = x * y
+dem Inhalt der Variablen y
+multipliziert und das Ergebnis
+der Variablen mit dem
+Namen produkt zugewiesen
+------------------------------------------------------------
+Dem Objekt mit dem Wert                     s = ['rot', 'gelb', 'grün']
+['rot', 'gelb', 'grün'] wird der Name       s.reverse()
+s zugeordnet. An das Objekt s wird die      print(s)
+Botschaft geschickt, es möge
+die Reihenfolge seiner Listenelemente
+umkehren. Anschließend soll
+der geänderte Wert ausgegeben werden

@@ -1,0 +1,11 @@
+➔ type(id('a')) : <class 'int'>
+➔ type(3/2) : <class 'float'>
+➔ type(3//2) : <class 'int'>
+➔ type(2.0/2) : <class 'float'>
+➔ type(2.0//2) : <class 'float'>
+➔ min("Abend", "Aal", "Ball") : 'Aal'
+➔ -2 ** -3 : -0.125
+➔ not(2.0 >2) : True
+➔ type(len('123')) : <class 'int'>
+➔ (1<2) + (1==1) : 2
+➔ type(1+2 <2) : <class 'bool'>
