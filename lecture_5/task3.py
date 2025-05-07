@@ -1,12 +1,11 @@
-def wurzel(x: int, n: int = 10):
-    i: int = 0.5*(n + x/n)
-    if n > 0:
-        n -= 1
-        return wurzel(x, i)
+def wurzel(x, n=10, z=1):
+    if n == 0:
+        return z
     else:
-        return 0
+        step: int = 0.5 * (z + x / z)
+        return wurzel(x, n - 1, step)
 
 
 if __name__ == '__main__':
-    n: int = 0
+    n: int = 2
     print(wurzel(n))
