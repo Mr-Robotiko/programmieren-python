@@ -1,30 +1,32 @@
-from typing import Dict
-
-
 def voting_system():
-    candidates: Dict[str, int] = dict()
-    print("Wählen sie, indem sie die Namen eingeben")
+    candidates = {
+        "Miriam": 0,
+        "Andreas": 0,
+        "Tim": 0
+    }
+
     has_voted = False
     while not has_voted:
-        candidate: str = input("Kandidat: \tPress ENT to continue\t")
-        amount: int = 1
-        if candidate == "":
-            has_voted = True
-        if candidate in candidates:
-            candidates[candidate] += amount
-        else:
-            candidates[candidate] = amount
-
-
-    while True:
         print("\nKandidaten:")
-        print(candidates.keys())
-        print("\nAktuelle Stimmen:")
-        for candidate, votes in candidates.items():
-            print(f"{candidate}: {votes}")
-        break
+        for name in candidates:
+            print(name)
+
+        choice = input("Stimme für Kandidat(in): ")
+
+        if choice in candidates:
+            candidates[choice] += 1
+            print(f"Danke für die Wahl von {choice}!")
+            has_voted = True
+        else:
+            print("Kein gültiger Kandidat.")
+
+    print("\nAktuelle Stimmen:")
+    for candidate, votes in candidates.items():
+        print(f"{candidate}: {votes}")
+
+    print("\nVielen Dank für Ihre Teilnahme!")
+    exit(0)
 
 
 if __name__ == '__main__':
     voting_system()
-
